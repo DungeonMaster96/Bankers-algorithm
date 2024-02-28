@@ -1,0 +1,470 @@
+
+/* Main Heading First Page */
+.firstPage {
+  height: 100vh; /* This will make sure it covers the entire viewport height */
+  font-family: Montserrat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+.Main-heading{
+  font-family: Montserrat;
+  font-size: 100px;
+  margin-left: 120px;
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+}
+
+.Main-heading::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  height: 2px;
+  width: 0;
+  background-color: #000;
+  transition: width 0.3s;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ALGORITHMS BLOCK FOR HOME PAGE */
+
+.cards {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  width: 100vw;
+  height: fit-content;
+  justify-content: space-around;
+  align-items: flex-end;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+.cardsIndex {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  width: fit-content;
+  height: fit-content;
+  justify-content: space-around;
+  align-items: flex-end;
+  flex-wrap: wrap;
+}
+
+.cardsDSPR {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  width: fit-content;
+  height: fit-content;
+  justify-content: space-around;
+  align-items: flex-end;
+  flex-wrap: wrap;
+}
+.card1{
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.algo-heading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 15%;
+  font-weight: 600;
+  font-size: x-large;
+  border-bottom: 3px solid yellow;
+  text-align: center;
+}
+
+.algo-cards {
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.algo-card-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ABOUT BLOCK OF EACH ALGORITHM WEBPAGE */
+
+/* Chat gpt use */
+.mid-heading {
+  position: relative;
+  display: inline-block; /* Ensures the hover effect only applies to the "About" heading */
+}
+
+
+.hover-border::after {
+  content: '';
+  width: 0%;
+  height: 3px;
+  background-color: black;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transition: all 1s ease;
+}
+
+/* Chatgpt use */
+.mid-block {
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: fit-content;
+  min-height: 100vh;
+  max-height: fit-content;
+  border-bottom: 2px solid black;
+}
+
+.mid-blockIndex {
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: fit-content;
+  min-height: 100vh;
+  max-height: fit-content;
+  border-bottom: 2px solid black;
+}
+
+/* .mid-blockDSPR{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: fit-content;
+  min-height: 100vh;
+  max-height: fit-content;
+} */
+
+.mid-heading-wrapper {
+  margin-bottom: 10px;
+  min-height: 65px;
+}
+
+.mid-heading{
+  margin-top: 30px;
+  position: relative;
+  height: 100%;
+}
+.mid-heading h1 {
+  text-align: center;
+  font-size: 2.9rem;
+  font-weight: 600;
+}
+.mid-heading:hover {
+  cursor: pointer;
+}
+
+.mid-heading:hover .hover-border::after{
+  left: 0%;
+  width: 100%;
+  cursor: pointer;
+}
+
+.mid-cards {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  width: 78vw;
+  height: 90vh;
+  height: fit-content;
+  justify-content: space-around;
+  align-items: normal;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+.card {
+  min-height: 250px;
+  max-height: 65vh;
+  max-width: 24rem;
+  margin: 15px;
+  transition: all 0.5s ease;
+ box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 30px -10px;
+}
+
+.card:hover {
+  transform: scale(1.1);
+}
+.card-body{
+  overflow-y: scroll;
+}
+.card-body::-webkit-scrollbar {
+  width: 7px;
+}
+.card-body::-webkit-scrollbar-thumb{
+  background: #a8ff78;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #78ffd6, #a8ff78);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, hsl(162, 100%, 74%), #a8ff78); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  border: 1px solid white;
+}
+
+@media only screen and (max-width: 1061px){
+  .card {
+      transform: scale(0.8);
+  }
+  .card:hover {
+      transform: scale(1.01);
+  }  
+  .heading h1 {
+      font-size: 2.5rem;
+  }
+  .mid-heading h1 {
+      font-size: 2rem;
+  }
+  .controls, .chart-display{
+      transform: scale(0.8);
+  }
+  #url{
+      transform: scale(0.8);
+  }
+  #run, #reset-button {
+      width: initial;
+  }
+
+}
+
+@media only screen and (max-width: 1200px){
+  #compare{
+      width:initial;
+  }
+}
+/* ABOUT BLOCK OF EACH ALGORITHM WEBPAGE  ENDS */
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.circles{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    z-index: -1;
+}
+
+.circles li{
+    position: absolute;
+    display: block;
+    list-style: none;
+    width: 20px;
+    height: 20px;
+    background: #3e9996;
+    animation: animate 25s linear infinite;
+    bottom: -150px;
+}
+.circles li:nth-child(1) {
+    left: 5%;
+    width: 50px;
+    height: 50px;
+    
+    animation-delay: 0s;
+  }
+  
+  .circles li:nth-child(2) {
+    left: 10%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 2s;
+    animation-duration: 12s;
+  }
+  
+  .circles li:nth-child(3) {
+    left: 6%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 4s;
+  }
+  
+  .circles li:nth-child(4) {
+    left: 89%;
+    width: 60px;
+    height: 60px;
+    animation-delay: 0s;
+    animation-duration: 18s;
+  }
+  
+  .circles li:nth-child(5) {
+    left: 90%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 0s;
+  }
+  
+  .circles li:nth-child(6) {
+    left: 85%;
+    width: 10px;
+    height: 10px;
+    animation-delay: 3s;
+  }
+  
+  .circles li:nth-child(7) {
+    left: 5%;
+    width: 50px;
+    height: 50px;
+    animation-delay: 7s;
+  }
+  
+  .circles li:nth-child(8) {
+    left: 10%;
+    width: 25px;
+    height: 25px;
+    animation-delay: 15s;
+    animation-duration: 45s;
+  }
+  
+  .circles li:nth-child(9) {
+    left: 100%;
+    width: 15px;
+    height: 15px;
+    animation-delay: 2s;
+    animation-duration: 35s;
+  }
+  
+  .circles li:nth-child(10) {
+    left: 95%;
+    width: 50px;
+    height: 50px;
+    animation-delay: 0s;
+    animation-duration: 11s;
+  }
+
+  /* @keyframes animate {
+    0%{
+        transform: translateY(0) rotate(0deg);
+        opacity: 2;
+        border-radius: 0;
+    }
+
+    100% {
+        transform: translateY(-1000px) rotate(-1000deg);
+        opacity: 0;
+        
+        border-radius: 50%;
+      }
+      
+} */
+
+.subheading{
+    position: relative;
+    margin-left: 55px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 48px;
+    line-height: 59px;
+    color: #024453;
+}
+
+/* CHATGPT USE */
+.subheading::after {
+  content: "";
+  position: absolute;
+  bottom: -5px; /* Adjust as needed to position the underline */
+  left: 0;
+  width: 100%;
+  height: 2px; /* Adjust as needed */
+  background-color: transparent; /* Initial color of the underline */
+  transition: background-color 0.3s ease; /* Smooth transition effect */
+}
+
+.subheading:hover::after {
+  background-color: black; /* Color of the underline when hovering */
+}
+/* CHATGPT USE ENDS */
+
+#basic-addon1{
+    color: black;
+    background-color: transparent;
+    outline: none;
+    border: none;
+
+}
+
+input :focus{
+    outline: 0!important;
+}
+
+table input{
+    padding: 8px;
+    border: #024453 1px solid;
+    border-radius: 10%;
+}
+
+td,
+th{
+    padding: 5px;
+}
+
+.col-5{
+  margin-top: 30px;
+  margin-left: 43.5%;
+  margin-bottom: 30px;
+}
+
+
+.code-in-advanceHTML{
+  color: aliceblue;
+  font-size: xx-small;
+  margin-left: 0;
+}
+.card-text{
+  margin-left: 0;
+}
